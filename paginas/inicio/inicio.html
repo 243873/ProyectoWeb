@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - AgroData</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="/img/Log.png" alt="Logo Icon" class="logo-icon"/>
+            <h1>AgroData</h1>
+        </div>
+        <div class="user-welcome">
+            <h4>Bienvenido, Usuario</h4>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#" class="active">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                Inicio
+            </a></li>
+            <li><a href="#">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                Perfil
+            </a></li>
+            <li><a href="#">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Clientes
+            </a></li>
+            <li><a href="#">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon><line x1="3" y1="22" x2="21" y2="22"></line></svg>
+                Proyectos
+            </a></li>
+            <li><a href="#">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                Talleres
+            </a></li>
+            <li><a href="#">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                Solicitudes
+            </a></li>
+        </ul>
+    </nav>
+
+    <main class="dashboard-content">
+        <section class="notifications-container">
+            <h4>Notificaciones:</h4>
+            <h6>Tareas requieren tu atención</h6>
+            <div class="notifications-list">
+                <article class="notification-item">
+                    <p>¡Has recibido una nueva solicitud de Asesoría!</p>
+                    <div class="notification-actions">
+                        <button class="btn-primary">Ir a Solicitudes</button>
+                        <button class="btn-danger btn-discard">Descartar</button>
+                    </div>
+                </article>
+                <article class="notification-item">
+                    <p>¡Has recibido una nueva solicitud de Taller!</p>
+                    <div class="notification-actions">
+                        <button class="btn-primary">Ir a Solicitudes</button>
+                        <button class="btn-danger btn-discard">Descartar</button>
+                    </div>
+                </article>
+                <article class="notification-item">
+                    <p>Juan Perez ha completado una tarea</p>
+                    <div class="notification-actions">
+                        <button class="btn-primary">Ir a Proyectos</button>
+                        <button class="btn-danger btn-discard">Descartar</button>
+                    </div>
+                </article>
+                <article class="notification-item">
+                    <p>Ramón Gonzales ha completado una tarea</p>
+                    <div class="notification-actions">
+                        <button class="btn-primary">Ir a Proyectos</button>
+                        <button class="btn-danger btn-discard">Descartar</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <!-- MODAL DE CONFIRMACIÓN -->
+    <div class="modal-overlay" id="delete-modal">
+        <div class="modal-content">
+            <h3>¿Seguro que desea eliminar este elemento?</h3>
+            <h6>Esta acción no se puede deshacer</h6>
+            <div class="modal-actions">
+                <button class="btn-danger" id="cancel-btn">Cancelar</button>
+                <button class="btn-primary" id="confirm-delete-btn">Aceptar</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/main.js"></script>
+    <script src="inicio.js"></script>
+</body>
+</html>

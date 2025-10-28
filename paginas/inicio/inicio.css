@@ -1,0 +1,65 @@
+/* ---- ESTILOS ESPECÍFICOS PARA LA PÁGINA DE INICIO ---- */
+
+.dashboard-content {
+    padding: 2.5rem 3rem;
+}
+
+.notifications-container {
+    background-color: var(--section-bg);
+    border: 1px solid #D3C4A8;
+    border-radius: 20px;
+    padding: 2rem 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.notifications-container h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.notifications-container h6 {
+    font-weight: 400;
+    color: #666;
+    margin-top: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.notification-item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #E0E0E0;
+}
+
+.notification-item p {
+    font-weight: 500;
+}
+
+.notification-actions {
+    display: flex;
+    gap: 1rem;
+    flex-shrink: 0; /* Evita que los botones se encojan */
+}
+
+/* Estilos específicos para el modal de confirmación */
+.modal-content h3 {
+    font-size: 24px;
+}
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.modal-actions button {
+    min-width: 120px;
+}

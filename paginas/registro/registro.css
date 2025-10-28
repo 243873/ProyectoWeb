@@ -1,0 +1,22 @@
+/* ---- (NUEVO ARCHIVO: paginas/registro/registro.css) ---- */
+
+/* Ajusta el padding vertical del contenedor del formulario de registro */
+.form-container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/* Reduce el margen inferior de los inputs para compactar el formulario */
+#registerForm input {
+    margin-bottom: 0.8rem;
+}
+
+/* Reduce el margen superior del botón principal */
+#registerForm .btn-primary {
+    margin-top: 0.8rem;
+}
+
+/* Reduce el margen inferior de los subtítulos */
+#registerForm h6, #registerForm .back-link {
+    margin-bottom: 1.2rem;
+}
